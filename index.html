@@ -75,6 +75,18 @@
         width: 100%;
         height: auto;
       }
+      .zindexphone{
+        z-index: 4;
+      }
+      .zindextext{
+        z-index: 1;
+      }
+
+      @media (max-width: 1000px){
+        .zindexphone{
+          z-index: -5;
+        }
+      }
     </style>
 
     
@@ -93,10 +105,10 @@
       <a class="btn btn-outline-secondary" href="#"> Apple iOS</a>
       <a class="btn btn-outline-secondary" href="#">Android</a>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"> 
+    <div class="product-device shadow-sm d-none d-md-block zindexphone"> 
       <img class="pic_scale_light" src="assets/new_crop_light.png" alt="Italian Trulli">
     </div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block zindexphone">
       <img class="pic_scale_dark" src="assets/new_crop_dark.png" alt="Italian Trulli">
     </div>
   </div>
